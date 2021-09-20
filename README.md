@@ -2,7 +2,7 @@
 Firefox Stylesheet To Add Brave-Like Elements
 
 ## Installation
-1. Install all files given (other than Read.me).
+1. Install all files given (other than ReadMe.md).
 2. Move all files to `Chrome Folder`
 3. Add the following code to your `userChrome.css` file (depending on which one you want to install):
   ```css
