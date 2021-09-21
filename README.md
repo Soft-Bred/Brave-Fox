@@ -24,9 +24,12 @@ Firefox On Top, Brave On Bottom
 
 
 ## Future Updates (please help me i have no idea what im doing):
-1. Correct Tab Rounding/Shape/Spacing **[Done, Waiting To Upload]**
-2. Propper Button Animations **[Done, Waiting To Upload]**
-3. Change Icons To Brave Icons
-4. Fix Stupid X Icon Appearing On Pinned Tabs When Hovered On. **[Done, Waiting To Upload]**
-5. Add Tab Growth Animation When Pinning/Un-Pinning.
-6. Add Better Looking Tab Hover States.
+
+1. Change Icons To Brave Icons
+2. Add Tab Growth Animation When Pinning/Un-Pinning.
+3. Add Better Looking Tab Hover States.
+
+### Done
+1. Fix Stupid X Icon Appearing On Pinned Tabs When Hovered On. **[Done, Waiting To Upload]**
+2. Correct Tab Rounding/Shape/Spacing **[Done, Waiting To Upload]**
+3. Propper Button Animations **[Done, Waiting To Upload]**
