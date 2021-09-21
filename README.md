@@ -27,3 +27,4 @@ Firefox On Top, Brave On Bottom
 1. Correct Tab Rounding/Shape/Spacing **[Done, Waiting To Upload]**
 2. Propper Button Animations
 3. Change Icons To Brave Icons
+4. Fix Stupid X Icon Appearing On Pinned Tabs When Hovered On.
