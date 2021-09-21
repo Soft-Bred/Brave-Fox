@@ -28,3 +28,4 @@ Firefox On Top, Brave On Bottom
 2. Propper Button Animations
 3. Change Icons To Brave Icons
 4. Fix Stupid X Icon Appearing On Pinned Tabs When Hovered On.
+5. Add Tab Growth Animation When Pinning/Un-Pinning.
