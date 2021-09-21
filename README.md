@@ -23,7 +23,7 @@ Firefox On Top, Brave On Bottom
 ![2vpJHTBs](https://user-images.githubusercontent.com/60551230/133959529-463d9173-f49a-4d5c-98bf-a0ef2029eeec.png)
 
 
-## Future Updates:
+## Future Updates (please help me i have no idea what im doing):
 1. Correct Tab Rounding/Shape/Spacing **[Done, Waiting To Upload]**
 2. Propper Button Animations
 3. Change Icons To Brave Icons
