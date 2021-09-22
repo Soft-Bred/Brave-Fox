@@ -30,7 +30,7 @@ Firefox On Top, Brave On Bottom
 3. Add Better Looking Tab Hover States.
 4. Add Space Between Tabs & New Tab Button.
 
-### Done
-1. Fix Stupid X Icon Appearing On Pinned Tabs When Hovered On. **[Done, Waiting To Upload]**
-2. Correct Tab Rounding/Shape/Spacing **[Done, Waiting To Upload]**
-3. Propper Button Animations **[Done, Waiting To Upload]**
+## Stuff That Is Broken (Kinda)
+### When Tab Overflow Is Off:
+1. Opening more than 38 (40 max) Tabs will break the close button and wont be centered.
+2. ----
