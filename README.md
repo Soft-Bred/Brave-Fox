@@ -2,7 +2,7 @@
 Firefox Stylesheet To Add Brave-Like Elements
 
 ## Versions
-There are two versions to Bave-Fox: `Overflow` & `Non-Overflow`.
+There are two versions to Brave-Fox: `Overflow` & `Non-Overflow`.
 
 ### Overflow vs Non-Overflow
 Chromium-based browsers do this thing where with every new tab, each other tab gets smaller and smaller, till you open enough tabs that newer ones stop displaying after a certain number of tabs. Firefox said "nah", and just decided to add a scroll wheel onto the tab bar.
@@ -22,3 +22,8 @@ I highly recommend you read the [documentation](https://brave-fox.notion.site/Ov
 /*----------------------------------------------------------------------------------------------------*/
 ```
 4. Save & restart Firefox.
+
+# Extras
+[Fluent Reveal Tabs](https://github.com/aminomancer/uc.css.js/blob/master/JS/fluentRevealTabs.uc.js)
+
+This adds Chromium's "flashlight" hover effect on tabs, just like Brave & Chrome have. Be warned tho, this is a JS script and needs a [script manager](https://github.com/MrOtherGuy/fx-autoconfig)
