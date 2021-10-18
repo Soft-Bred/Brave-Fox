@@ -1,0 +1,78 @@
+/*
+╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+║ Name                     ║ Brave Incognito New Tabs                                                                ║
+╠══════════════════════════╬═════════════════════════════════════════════════════════════════════════════════════════╣
+║ Description              ║ Changes Incognito New Tabs To Match That Of Brave Browser.                              ║
+╠══════════════════════════╬═════════════════════════════════════════════════════════════════════════════════════════╣
+║ Sub-Folder               ║ userContent.css                                                                         ║
+╠══════════════════════════╬═════════════════════════════════════════════════════════════════════════════════════════╣
+║ Notable Help             ║ u/It_Was_The_Other_Guy                                                                  ║
+╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+*/
+
+
+/* Makes Private New Tab Look More Like Brave */
+/* Thanks u/It_Was_The_Other_Guy */
+html.private{ background-image: linear-gradient(rgb(56, 25, 128), rgb(12, 4, 30)) }
+
+/* Removes Search Bar From Private Windows */
+.search-handoff-button, 
+.search-handoff-button:active, 
+.search-handoff-button:enabled:hover:active,
+.search-inner-wrapper {
+    display: none !important;
+}
+
+/* Removes Top Padding From Promotional VPN Message */
+.promo.below-search {
+    padding: 0px 22px 0 !important;
+}
+
+/* Reduce Space Between Firefox Logo & Safety Message */
+.logo-and-wordmark {
+    margin-bottom: 20px !important;
+}
+
+/* Change Promotional VPN Header */
+/* Butcher Original Description Text*/
+.promo-content h1 {
+    text-indent: -9999px;
+    line-height: 0; /* Collapse the original line */
+}
+/* Custom Header Text*/
+.promo-content h1::after {
+    content: "Private Browsing Isn't As Private As You Might Think";
+    text-indent: 0;
+    display: block;
+    line-height: initial; /* New content takes up original line height */
+}
+
+/* Change Promotional VPN Details */
+/* Massacre Original Description Text*/
+.promo-content p {
+    text-indent: -9999px;
+    line-height: 0; /* Collapse the original line */
+}
+/* Custom Description Text*/
+.promo-content p::after {
+    content: "Firefox doesn't remember what you do in a Private Window. Sites you visit won't show up in your history, and cookies vanish when you're done. Private Windows don't make you completely anonymous online and and a VPN is recommended.";
+    text-indent: 0;
+    display: block;
+    line-height: initial; /* New content takes up original line height */
+}
+
+/* Reduce Spacing Between Text & Heading */
+.promo-content p {
+    line-height: 0em !important;
+    margin-top: -3px !important;
+}
+
+/* Terminate VPN Button */
+.promo-cta a {
+    display: none !important;
+}
+
+/* Removes Old Warning Message */
+.info {
+    display: none !important;
+}

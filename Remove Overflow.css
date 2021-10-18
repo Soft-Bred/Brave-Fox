@@ -1,0 +1,19 @@
+/* Mimimum Size For Hovered Non-Selected Tabs */
+.tabbrowser-tab:not([pinned]):not([selected]):hover[fadein]{ 
+    max-width: 245px !important;
+}
+
+/* Make Selected Tabs Have A Minimum Size */
+.tabbrowser-tab[selected][fadein]:not([pinned]) {  
+    min-width: 50px !important;
+}
+
+/* Tab Overflow          */
+/* On By Default         */
+/* Thanks u/-SZCMAWO     */
+.tabbrowser-tab {
+    min-width: 0px !important; 
+}
+.tab-content { 
+    overflow: hidden !important;
+}

@@ -1,0 +1,165 @@
+/*
+╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+║ Name                     ║ Brave Toolbar                                                                           ║
+╠══════════════════════════╬═════════════════════════════════════════════════════════════════════════════════════════╣
+║ Description              ║ Makes The Toolbar Match Brave's                                                         ║
+╠══════════════════════════╬═════════════════════════════════════════════════════════════════════════════════════════╣
+║ Sub-Folder               ║ userChrome.css                                                                          ║
+╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+*/ 
+
+
+/* Padding Between Toolbar Icons (Back, Forward, Refresh) Inside Their Hitbox */
+:root{
+    --toolbarbutton-inner-padding:5px !important;
+}
+
+/* Fix Tiny Reader Mode Button */
+#reader-mode-button {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+/* Small URL Bar Height */
+:root, 
+#urlbar-container, 
+#search-container, 
+#nav-bar-customization-target, 
+#nav-bar {
+    --urlbar-min-height: 28px !important;
+}
+
+/* Make Toolbar Small */
+#urlbar-container, 
+#search-container, 
+#nav-bar-customization-target, 
+#nav-bar {
+    --urlbar-toolbar-height: 20px !important;
+    --urlbar-container-height: 37px !important;
+}
+
+/* Remove Top And Bottom Padding Of URL Bar */
+#urlbar-container {
+    padding-top: 8px !important;
+    padding-bottom: 0px !important;
+}
+
+/* Make Back Button Closer To Left Side */
+#back-button {
+    margin-left: 5px !important;
+}
+
+/* Make All Toolbar Buttons Have Smaller Space Between Eachother */
+toolbar .toolbarbutton-1 {
+    margin-left: 2px !important;
+}
+
+/* Kill Refresh Animation */
+#nav-bar-customization-target > 
+#stop-reload-button > 
+:is(#reload-button, #stop-button) > 
+.toolbarbutton-animatable-box {
+    display: none !important;
+}
+
+/* Make Stop Refresh Icon Visible */
+#stop-reload-button[animate] > 
+#reload-button > 
+.toolbarbutton-icon, #stop-reload-button[animate] > 
+#reload-button[displaystop] + #stop-button > 
+.toolbarbutton-icon {
+    fill: #eeeeee !important;
+}
+
+/* Make Site Information Dropdown Look Like Brave (Kinda) */
+/* Connection Not Secure Text Color */
+.identity-popup-connection-not-secure{
+    color: #F28B82 !important;
+}
+
+/* Connection Not Secure Text Color */
+.identity-popup-connection-secure{
+    color: #81C995 !important;
+}
+
+/* Make Not Secure Icon Have Separator Line */
+#identity-box[pageproxystate="valid"].notSecure::after {
+width: 1px;
+content: "";
+margin-left: 0px;
+display: -moz-box;
+background-image: linear-gradient(
+    transparent 20%,
+    color-mix(in srgb, currentColor 20%, transparent) 10%,
+    color-mix(in srgb, currentColor 20%, transparent) 85%,
+    transparent 20%
+);
+transition: opacity 300ms linear !important;
+}
+#identity-box:hover:after,
+#identity-box:hover:after {
+    opacity: 0 !important;
+}
+
+/* Make Not Secure Box Have Text */
+#identity-box[pageproxystate="valid"].notSecure ::after {
+    content: "Not secure";
+    font-size: 14px;
+    color: #9AA0A6;
+    /* Space Between Icon & Text */
+    text-indent: 5px;
+    /* Make Text Centred */
+    padding: 0 01px 2px 0;
+    display: block;
+    line-height: initial; /* New content takes up original line height */
+}
+
+/* Moves Bookmark Button To The Left Of URL Bar */
+#star-button-box {
+    display: block;
+    position: absolute;
+    left: -35px;
+    -moz-window-dragging: no-drag;
+}
+#urlbar-input-container { overflow: visible !important }
+/* Adds Space To URL Bar So Bookmark Doesnt Get Overlap */
+#urlbar-container { margin-left: 37px !important }
+
+/* Make Bookmark Button Centred Again */
+#star-button-box.urlbar-page-action {
+    height: 26px !important;
+    width: 26px !important;
+    padding: 5px !important;
+}
+
+/* URL Bar Fade Animation On Hover */
+#urlbar-input-container:hover {
+    background-color: #23252F !important;
+}
+#urlbar-input-container {
+    transition: background-color .3s ease-in;
+}
+
+/* Make Reload Button Smaller */
+#reload-button > .toolbarbutton-icon {
+    padding: 6.5px !important;
+}
+
+/* Make Bookmark Button Smaller */
+#star-button.urlbar-icon {
+    padding: 1px
+}
+
+/* Make Back / Forawrd Button Smaller */
+#back-button > .toolbarbutton-icon,
+#forward-button > .toolbarbutton-icon{
+    padding: 5.5px !important;
+}
+
+/* Fix Search Bookmarks Item In Settings Dropdown */
+#panelMenu_searchBookmarks > image:nth-child(1) {
+    margin-left: -10px !important;
+}
+#panelMenu_searchBookmarks {
+    height: 32px !important;
+}

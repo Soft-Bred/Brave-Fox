@@ -1,0 +1,40 @@
+/*
+╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+║ Name                     ║ Murder Proton Tab Spacing??? (Wtf Mozilla)                                              ║
+╠══════════════════════════╬═════════════════════════════════════════════════════════════════════════════════════════╣
+║ Description              ║ Fixes Spacing Between Tabs Because Mozilla Dummy                                        ║
+╠══════════════════════════╬═════════════════════════════════════════════════════════════════════════════════════════╣
+║ Sub-Folder               ║ userChrome.css                                                                          ║
+╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+*/
+
+
+/* Reduce Spacing Between Pinned And Regular Tabs */
+#tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[first-visible-unpinned-tab] { 
+    margin-inline-start: initial !important; 
+}
+
+/* Obliterate Space To Left Of Toolbar */
+.titlebar-spacer[type="pre-tabs"] {
+    display: none !important;
+}
+
+/* Adds Small Space Before First Tab To Match Top Padding */
+#tabbrowser-tabs {
+    margin-left: 4px !important;
+}
+
+/* Sets Right-Padding Of New Tab Button To 0 */
+#tabs-newtab-button, 
+#TabsToolbar #new-tab-button {
+    padding-right: 0px !important;
+}
+
+/* Make Pinned Tabs Have Equal Favicon Padding */
+/* Fixed By Bred For Brave-Fox                 */
+:root:not([uidensity="compact"]) .tab-content[pinned] {
+    padding-top: 0px !important;
+    padding-right: 0px !important;
+    padding-bottom: 0px !important;
+    padding-left: 9px !important;
+}

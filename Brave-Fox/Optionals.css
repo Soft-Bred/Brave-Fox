@@ -1,0 +1,61 @@
+/*
+╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+║ Name                     ║ Optionals                                                                               ║
+╠══════════════════════════╬═════════════════════════════════════════════════════════════════════════════════════════╣
+║ Description              ║ Optional Things You Can Turn On/Off                                                     ║
+╠══════════════════════════╬═════════════════════════════════════════════════════════════════════════════════════════╣
+║ Sub-Folder               ║ userChrome.css                                                                          ║
+╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+*/ 
+
+
+/* Makes Close Tab Button Have Even Padding On Right */
+/* On By Default                                     */
+.tab-close-button {
+    margin-inline-end: 0px !important;
+}
+
+
+
+/* Adds Space To URL Bar Similar To That Of Brave */
+/* On By Default                                  */
+:root[sizemode="maximized"] #urlbar-container{
+    margin-right: 120px !important;
+    margin-left: 120px !important;
+}
+
+
+
+/* Terminate New Tab FavIcon */
+/* On By Default             */
+.tabbrowser-tab[label^="New Tab"] .tab-icon-image {
+    display: none;
+}
+
+
+
+/* Close Tab Icon Fade Animation */
+/* On By Default                 */
+.tab-close-button,
+.tab-icon-overlay:-moz-any([soundplaying], [muted], [activemedia-blocked]),
+.tab-icon-sound
+{
+	transition-property: fill-opacity, background-color !important;
+	transition-duration: .15s !important;
+	transition-timing-function: var(--ease-basic) !important;
+}
+
+
+
+/* Hide Enhanced Tracking Button */
+/* On By Default                 */
+#tracking-protection-icon-container {
+    display: none !important;
+}
+
+
+
+/* Always Show Bookmark Button */
+#star-button-box {
+    display: flex !important;
+}

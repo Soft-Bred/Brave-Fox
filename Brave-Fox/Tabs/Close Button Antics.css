@@ -1,0 +1,43 @@
+/*
+╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+║ Name                     ║ Close Button Antics                                                                     ║
+╠══════════════════════════╬═════════════════════════════════════════════════════════════════════════════════════════╣
+║ Description              ║ Makes Close Buttons Behave Like Brave's                                                 ║
+╠══════════════════════════╬═════════════════════════════════════════════════════════════════════════════════════════╣
+║ Sub-Folder               ║ userChrome.css                                                                          ║
+╠══════════════════════════╬═════════════════════════════════════════════════════════════════════════════════════════╣
+║ Notable Help             ║ u/9hp71n                                                                                ║
+╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+*/
+
+
+/* Kill Close Button. (Don't Worry, It Comes Back Later) */
+#TabsToolbar .close-icon {
+    display: none !important;
+}
+
+/* Always Show Close Icon - Selected Tabs */
+#TabsToolbar .tabbrowser-tab[selected]:not([pinned]) .close-icon {
+    display: inline-block !important;
+}
+
+/* Show Close Icon On Hover - Unfoucused Tabs */
+/* Thanks u/9hp71n */
+#TabsToolbar .tabbrowser-tab:not([pinned]):hover .close-icon {
+    display: inline-block !important;
+}
+
+/* Make Close Icon Hitbox Circular */
+.tab-close-button,
+.tab-icon-overlay:-moz-any([soundplaying], [muted], [activemedia-blocked]),
+.tab-icon-sound
+{
+	border-radius: 99px !important;
+	color: inherit !important;
+	-moz-context-properties: fill, fill-opacity !important;
+	transition-property: fill-opacity, background-color !important;
+	transition-duration: .15s !important;
+	transition-timing-function: var(--ease-basic) !important;
+	fill-opacity: 1 !important;
+	opacity: 1 !important;
+}

@@ -1,0 +1,23 @@
+/*
+╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+║ Name                     ║ Main Import                                                                             ║
+╠══════════════════════════╬═════════════════════════════════════════════════════════════════════════════════════════╣
+║ Description              ║ Main Import For Brave-Fox, Allows User To Turn Stuff On & Off                           ║
+╠══════════════════════════╬═════════════════════════════════════════════════════════════════════════════════════════╣
+║ Sub-Folder               ║ userChrome.css & userContent.css                                                        ║
+╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+*/ 
+
+
+@import url("Optionals.css");
+@import url("Brave Button Icons.css");
+@import url("Toolbar.css");
+@import url("Tabs/Tab Shapes.css");
+@import url("Tabs/Close Button Antics.css");
+@import url("Tabs/Murder Proton Tab Spacing.css");
+@import url("Private Browsing/Brave Incognito Colours.css");
+@import url("Private Browsing/Brave Incognito New Tab.css");
+@import url("Fancy Animation Zone.css");
+
+/* No Overflow Version */
+@import url("Remove Overflow.css");

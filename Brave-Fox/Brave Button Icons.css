@@ -1,0 +1,108 @@
+/*
+╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+║ Name                     ║ Brave Button Icons                                                                      ║
+╠══════════════════════════╬═════════════════════════════════════════════════════════════════════════════════════════╣
+║ Description              ║ Makes Back & Forward Buttons resemble that of Brave Browser                             ║
+╠══════════════════════════╬═════════════════════════════════════════════════════════════════════════════════════════╣
+║ Sub-Folder               ║ userChrome.css                                                                          ║
+╠══════════════════════════╬═════════════════════════════════════════════════════════════════════════════════════════╣
+║ Notable Help             ║ u/It_Was_The_Other_Guy                                                                  ║
+╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+*/ 
+
+
+/* Change Forward Button */
+#forward-button{ list-style-image: url("Brave-Fox Images/Forward Button.svg") !important; }
+
+/* Change Back Button */
+#back-button{ list-style-image: url("Brave-Fox Images/Back Button.svg") !important; }
+
+/* Change Reload Button */
+#reload-button{ list-style-image: url("Brave-Fox Images/Reload.svg") !important; }
+
+/* Change Bookmark Icon */
+#star-button { list-style-image: url("Brave-Fox Images/Bookmark.svg") !important; }
+#star-button[starred] { list-style-image: url("Brave-Fox Images/bookmark Filled.svg") !important; }
+
+/* Change Menu Icon */
+#PanelUI-menu-button > stack:nth-child(1) > image:nth-child(1) {
+	list-style-image: url("Brave-Fox Images/Menu.svg") !important;
+	height: 12.5px;
+	align-self: center;
+}
+	/* Make Menu Icon Box Normal Sized */
+	#PanelUI-menu-button > stack:nth-child(1){
+	height: 26px !important;
+	width: 26px !important;
+}
+
+/* Change Plugins Icon */
+#nav-bar-overflow-button > image:nth-child(1),
+#add-ons-button > image:nth-child(1) {
+list-style-image: url("Brave-Fox Images/Plugins.svg") !important; }
+
+
+/* Make Reload Slightly Bigger */
+.reload-button.toolbarbutton-1 {
+    padding: 4.7px !important;
+}
+
+/* New Tab Button */
+#tabs-newtab-button,
+#new-tab-button {
+	list-style-image: url("Brave-Fox Images/New Tab.svg") !important;
+}
+
+/* Change Search Button */
+#urlbar[pageproxystate="invalid"] #identity-icon,
+.searchbar-search-icon,
+#PopupAutoCompleteRichResult .ac-type-icon[type="keyword"],
+#PopupAutoCompleteRichResult .ac-site-icon[type="searchengine"],
+#appMenu-find-button,
+#panelMenu_searchBookmarks {
+	list-style-image: url("Brave-Fox Images/Search.svg") !important;
+}
+
+/* Change Close Button */
+.tab-close-button {
+	list-style-image: url("Brave-Fox Images/Close Tab.svg") !important;
+	width: 16px !important;
+	height: 16px !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+/* Lock Icon */
+#identity-icon { 
+  list-style-image: url("Brave-Fox Images/Lock.svg") !important;
+	width: 16px !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+/* Lock Icon In Security Dropdown */
+#identity-popup[connection^="secure"] .identity-popup-security-connection {
+  background-image: url("Brave-Fox Images/Lock.svg") !important;
+}
+
+/* Change Warning Icon */
+#identity-box[pageproxystate="valid"].notSecure #identity-icon,
+#identity-box[pageproxystate="valid"].mixedActiveContent #identity-icon,
+#identity-box[pageproxystate="valid"].httpsOnlyErrorPage #identity-icon,
+#identity-box[pageproxystate="valid"].weakCipher #identity-icon,
+#identity-box[pageproxystate="valid"].mixedDisplayContent #identity-icon,
+#identity-box[pageproxystate="valid"].mixedDisplayContentLoadedActiveBlocked #identity-icon,
+#identity-box[pageproxystate="valid"].certUserOverridden #identity-icon,
+#identity-box[pageproxystate="valid"].certErrorPage #identity-icon
+{
+  list-style-image: url("Brave-Fox Images/Warning.svg") !important;
+  width: 18px !important;
+  margin: 0 2px 0 1px !important;
+  padding: 2px !important;
+}
+
+/* Warning Icon In Security Dropdown */
+.identity-popup-security-connection {
+  background-image: url("Brave-Fox Images/Warning.svg") !important;
+	padding-left: 5px !important; 
+}

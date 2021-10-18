@@ -1,0 +1,40 @@
+/*
+╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+║ Name                     ║ Fancy Animation Zone                                                                    ║
+╠══════════════════════════╬═════════════════════════════════════════════════════════════════════════════════════════╣
+║ Description              ║ Makes Hover States Sexy                                                                 ║
+╠══════════════════════════╬═════════════════════════════════════════════════════════════════════════════════════════╣
+║ Sub-Folder               ║ userChrome.css                                                                          ║
+╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+*/ 
+
+
+/* Makes Hovering Over Inactive Tabs Have A Small Fade In */
+/* Thanks u/poorman3333 */
+.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected="true"]) {
+    transition: 300ms !important;
+}
+
+/* Toolbar Button Fade In Animations */
+/* Thanks u/9hp71n */
+
+/* Shield Icon */
+#tracking-protection-icon-container:not([disabled="true"], [checked], [open], :active),
+
+/* Lock Icon */
+#identity-icon-box:not([disabled="true"], [checked], [open], :active),
+
+/* Extentions & Menu Button */
+toolbar .toolbarbutton-badge-stack:not([disabled="true"], [checked], [open], :active),
+
+/* Back / Forward / Refresh */
+toolbar .toolbarbutton-1:not([disabled="true"], [checked], [open], :active) > .toolbarbutton-icon,
+
+/* Star / Bookmark Button */
+.urlbar-page-action, #urlbar-go-button, .search-go-button:not([disabled="true"], [checked], [open], :active) {
+    transition:background linear 250ms;
+}
+
+/* Pin / Un-Pin Tab Animation    */
+/* Thanks u/It_Was_The_Other_Guy */
+.tabbrowser-tab[fadein]{transition: min-width 250ms linear, max-width 250ms linear !important;}
