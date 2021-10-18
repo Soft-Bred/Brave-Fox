@@ -1,5 +1,6 @@
+![Brave-Fox Banner](https://preview.redd.it/7ilia7199au71.png?width=2736&format=png&auto=webp&s=2bb02f857421d02dc86246baece4b20b41caf698)
 # Brave-Fox
-Firefox Stylesheet To Add Brave-Like Elements
+Brave-Fox is a Firefox Theme that brings Brave's design elements into Firefox.
 
 ## Versions
 There are two versions to Brave-Fox: `Overflow` & `Non-Overflow`.
