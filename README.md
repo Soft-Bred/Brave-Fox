@@ -1,9 +1,14 @@
+# Important
+Yea... this isn't getting updated anytime soon.
+
+___
+
 ![Brave-Fox Banner](https://preview.redd.it/7ilia7199au71.png?width=2736&format=png&auto=webp&s=2bb02f857421d02dc86246baece4b20b41caf698)
 # Brave-Fox
 Brave-Fox is a Firefox Theme that brings Brave's design elements into Firefox.
 
 ## Versions
-There are two versions to Brave-Fox: `Overflow` & `Non-Overflow`.
+There are two versions of Brave-Fox: `Overflow` & `Non-Overflow`.
 
 ### Overflow vs Non-Overflow
 Chromium-based browsers do this thing where with every new tab, each other tab gets smaller and smaller, till you open enough tabs that newer ones stop displaying after a certain number of tabs. Firefox said "nah", and just decided to add a scroll wheel onto the tab bar.
