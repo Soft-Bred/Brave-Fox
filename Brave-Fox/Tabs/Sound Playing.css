@@ -1,0 +1,28 @@
+/*
+╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+║ Name                     ║ Sound Playing                                                                           ║
+╠══════════════════════════╬═════════════════════════════════════════════════════════════════════════════════════════╣
+║ Description              ║ Reset sound playing icon's default behavior                                             ║
+╠══════════════════════════╬═════════════════════════════════════════════════════════════════════════════════════════╣
+║ Sub-Folder               ║ userChrome.css                                                                          ║
+╠══════════════════════════╬═════════════════════════════════════════════════════════════════════════════════════════╣
+║ Author                   ║ xuanhung1509                                                                            ║
+╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+*/
+
+/* Prevent icon from overlapping site's favicon */
+.tab-icon-overlay[soundplaying] {
+  display: none;
+}
+
+/* Show icon on tab hover */
+#TabsToolbar
+  .tabbrowser-tab:not([pinned]):hover
+  .tab-icon-overlay[soundplaying] {
+  display: block;
+}
+
+/* Hide "Playing" label when tab's pinned */
+.tab-secondary-label[pinned] {
+  display: none;
+}
